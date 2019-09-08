@@ -35,7 +35,7 @@ document.ready(
     function () {
         var _Blog = window._Blog || {};
         const currentTheme = window.localStorage && window.localStorage.getItem('theme');
-        const isDark = currentTheme === 'dark';
+        const isDark = currentTheme !== 'Dark';
         if (isDark) {
             document.getElementById("switch_default").checked = true;
             // mobile
